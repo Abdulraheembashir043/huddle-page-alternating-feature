@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header, footer, main, section, article, nav {
+  display: block;
+}
+
+.wrapper h1, .wrapper h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #00252e;
+}
+
+.wrapper p {
+  color: #808d99;
+}
+
+.wrapper header {
+  background: url(../images/bg-hero-mobile.svg) no-repeat, #e6f7fd;
+}
+
+.wrapper header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+  padding: 30px 20px 20px;
+}
+
+.wrapper header nav img {
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.wrapper header nav button {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  background: white;
+  border: none;
+  width: 100px;
+  padding: 6px 0;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wrapper header .community {
+  text-align: center;
+  padding: 0 30px 0;
+}
+
+.wrapper header .community h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.wrapper header .community p {
+  margin: 20px 0;
+}
+
+.wrapper header .community button {
+  border: none;
+  background: #ff52bf;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  width: 250px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.wrapper header .community img {
+  width: 100%;
+}
+
+.wrapper main {
+  padding: 50px 15px 250px;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper main img {
+  width: 80%;
+}
+
+.wrapper main .people {
+  padding: 70px 30px 50px;
+  border: 1px solid #ebfbff;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 10px -5px #808d99;
+          box-shadow: 1px 1px 10px -5px #808d99;
+}
+
+.wrapper main .people h3 {
+  margin: 50px 0 20px;
+}
+
+.wrapper main .conversation {
+  margin: 30px 0;
+}
+
+.wrapper main .register {
+  background: white;
+  padding: 30px 20px;
+  position: absolute;
+  left: 35px;
+  bottom: -50px;
+  margin: 0 auto;
+  display: block;
+}
+
+.wrapper main .register h4 {
+  margin: 20px 0;
+}
+
+.wrapper main .register button {
+  border: none;
+  background: #ff52bf;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.wrapper footer {
+  background: #00252e;
+  color: white;
+  padding: 100px 20px 10px;
+}
+
+.wrapper footer .logo {
+  margin-bottom: 20px;
+}
+
+.wrapper footer .logo img {
+  width: 150px;
+}
+
+.wrapper footer .location, .wrapper footer .phone, .wrapper footer .email {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr;
+      grid-template-columns: 1fr 6fr;
+}
+
+.wrapper footer .phone {
+  margin: 20px 0;
+}
+
+.wrapper footer .about {
+  margin: 50px 0;
+}
+
+.wrapper footer .about a {
+  width: 100px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.wrapper footer .about a:hover {
+  text-decoration: underline;
+}
+
+.wrapper footer .social {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper footer .social img:nth-of-type(2) {
+  margin: 0 15px;
+}
+
+.wrapper footer .copyright {
+  text-align: center;
+  color: white;
+  font-size: .8em;
+  margin-bottom: 50px;
+}
+
+.wrapper footer .profile {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.wrapper footer .profile #fspan {
+  padding-right: 10px;
+  border-right: 1px solid #ff52bf;
+}
+
+.wrapper footer .profile #sspan {
+  padding-left: 10px;
+  border-left: 1px solid white;
+}
+
+.wrapper footer .profile a {
+  color: #ff52bf;
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.wrapper footer .profile a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

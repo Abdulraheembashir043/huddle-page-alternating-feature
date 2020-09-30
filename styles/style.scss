@@ -1,0 +1,232 @@
+// ########## Default ##########
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header, footer, main, section, article, nav {
+  display: block;
+}
+
+// ########## Mobile View ##########
+.wrapper {
+
+  h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%)
+  }
+
+  p {
+    color: hsl(208, 11%, 55%);
+  }
+
+  header {
+    background: url(../images/bg-hero-mobile.svg) no-repeat, rgb(230, 247, 253);
+    
+    nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 100px;
+      padding: 30px 20px 20px;
+
+      img {
+        width: 100px;
+        align-self: center;
+      }
+
+      button {
+        justify-self: end;
+        background: white;
+        border: none;
+        width: 100px;
+        padding: 6px 0;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+    }
+
+    .community {
+      text-align: center;
+      padding: 0 30px 0;
+      
+      h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 20px 0;
+      }
+
+      button {
+        border: none;
+        background: hsl(322, 100%, 66%);
+        font-weight: bold;
+        color: white;
+        padding: 10px;
+        width: 250px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-bottom: 50px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+  } // End of header
+
+  main {
+    padding: 50px 15px 250px;
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 80%;
+    }
+
+   .people {
+      padding: 70px 30px 50px;
+      border: 1px solid hsl(193, 100%, 96%);
+      border-radius: 20px;
+      box-shadow: 1px 1px 10px -5px hsl(208, 11%, 55%);
+
+      h3 {
+        margin: 50px 0 20px;
+      }
+
+    }
+
+   .conversation {
+      margin: 30px 0;
+    }
+
+   .register {
+      background: white;
+      padding: 30px 20px;
+      position: absolute;
+      left: 35px;
+      bottom: -50px;
+      margin: 0 auto;
+      display: block;
+
+      h4 {
+        margin: 20px 0;
+      }
+
+      button {
+        border: none;
+        background: hsl(322, 100%, 66%);
+        font-weight: bold;
+        color: white;
+        padding: 10px;
+        width: 200px;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+    }
+
+  } // End of Main
+
+  footer {
+    background: hsl(192, 100%, 9%);
+    color: white;
+    padding: 100px 20px 10px;
+
+    .logo {
+      margin-bottom: 20px;
+
+      img {
+        width: 150px;
+      }
+
+    }
+
+    .location, .phone, .email {
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+    }
+
+    .phone {
+      margin: 20px 0;
+    }
+
+    .about {
+      margin: 50px 0;
+
+      a {
+        width: 100px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+        
+      }
+
+    }
+
+    .social {
+      text-align: center;
+      margin-bottom: 20px;
+
+      img {
+
+        &:nth-of-type(2) {
+          margin: 0 15px;
+        }
+
+      }
+
+    }
+
+    .copyright {
+      text-align: center;
+      color: white;
+      font-size: .8em;
+      margin-bottom: 50px;
+    }
+
+    .profile {
+      text-align: center;
+      font-size: 0.75em;
+
+      #fspan {
+        padding-right: 10px;
+        border-right: 1px solid hsl(322, 100%, 66%);
+      }
+
+      #sspan {
+        padding-left: 10px;
+        border-left: 1px solid white;
+      }
+
+      a {
+        color: hsl(322, 100%, 66%);
+        text-decoration: underline;
+        text-decoration-color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+      }
+
+    }
+
+  } // End of Footer
+
+} // End of Wrapper
