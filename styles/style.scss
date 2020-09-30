@@ -71,7 +71,7 @@ header, footer, main, section, article, nav {
         font-weight: bold;
         color: white;
         padding: 10px;
-        width: 250px;
+        width: 200px;
         border-radius: 50px;
         cursor: pointer;
         margin-bottom: 50px;
@@ -111,13 +111,16 @@ header, footer, main, section, article, nav {
     }
 
    .register {
+      padding: 70px 30px 50px;
+      border: 1px solid hsl(193, 100%, 96%);
+      border-radius: 20px;
+      box-shadow: 1px 1px 10px -5px hsl(208, 11%, 55%);
       background: white;
       padding: 30px 20px;
       position: absolute;
-      left: 35px;
+      left: 5%;
       bottom: -50px;
-      margin: 0 auto;
-      display: block;
+      width: 300px;
 
       h4 {
         margin: 20px 0;
@@ -174,7 +177,7 @@ header, footer, main, section, article, nav {
         &:hover {
           text-decoration: underline;
         }
-        
+
       }
 
     }
@@ -183,8 +186,8 @@ header, footer, main, section, article, nav {
       text-align: center;
       margin-bottom: 20px;
 
-      img {
-
+      a {
+        
         &:nth-of-type(2) {
           margin: 0 15px;
         }
@@ -230,3 +233,155 @@ header, footer, main, section, article, nav {
   } // End of Footer
 
 } // End of Wrapper
+
+// ########## Desktop View ##########
+@media screen and (min-width: 768px) {
+  .wrapper {
+
+    header {
+      background: url(../images/bg-hero-desktop.svg) no-repeat, rgb(230, 247, 253);
+      padding: 30px 100px;
+
+      nav {
+  
+        img {
+          width: auto;
+        }
+
+        button {
+          width: 200px;
+          font-size: 1.2em;
+        }
+
+      }
+
+      .community {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 3em;
+
+        .write-up {
+          text-align: left;
+          align-self: center;
+         
+          h1, p {
+            line-height: 1.5em;
+          }
+
+        }
+
+      }
+
+    } // End of Header
+
+    main {
+      padding: 100px 100px 250px;
+
+      .people {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-gap: 3em;
+
+        h3, p {
+          line-height: 1.5em;
+          text-align: left;
+        }
+
+        p {
+          padding: 0 100px 0 0;
+        }
+
+        .image {
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .write-up {
+          justify-self: center;
+          margin-left: 50px;
+
+          h3, p {
+            padding: 0;
+          }
+
+        }
+
+      }
+
+      .register {
+        width: 500px;
+        left: 30%;
+
+        h4 {
+          font-size: 1.3em;
+        }
+
+      }
+
+
+    } // End of Main
+
+    footer {
+      padding: 100px 100px 10px;
+
+      .about-huddle {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4em;
+
+        .contact {
+
+          .logo {
+
+            img {
+              width: 200px;
+            }
+
+          }
+
+        }
+
+        .about {
+          align-self: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-items: center;
+          height: 100px;
+
+          a {
+
+            &:nth-of-type(2) {
+              grid-row: 2;
+              grid-column: 1;
+            }
+
+            &:nth-of-type(3) {
+              grid-row: 3;
+              grid-column: 1;
+            }
+
+          }
+          
+        }
+
+        .social {
+          align-self: center;
+          height: 80px;
+        }
+
+      }
+
+      .copyright {
+        text-align: right;
+      }
+
+      .profile {
+        font-size: .9em;
+      }
+
+    } // End of Footer
+
+  } // End of Wrapper
+
+} // End of Media Query
